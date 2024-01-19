@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit-testing</title>
+    <script defer>
+      window.onload = () => {
+        showVersion();
+      };
+    </script>
+    <script defer src="./calculator.mjs"></script>
+    <script defer src="./main.mjs"></script>
+  </head>
+  <body>
+    <h2 style="text-align: center; font-style: italic">Simple Calculator</h2>
+    <hr />
+    <div style="text-align: center">
+      <input type="text" id="input" />
+      <br />
+      Result-: <span id="result" style="color: rgb(255, 71, 4)">0</span>
+    </div>
+    <br />
+    <div style="text-align: center">Version: <span id="version">0</span></div>
+  </body>
+</html>
