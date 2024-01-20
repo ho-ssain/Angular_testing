@@ -439,3 +439,27 @@ types of mocks
 1. Dummies
 2. Stubs
 3. Spies
+
+### TestBed
+
+TestBed is the central utility for configuring and creating Angular testing modules. It allows you to set up the testing environment by configuring providers, components, and other dependencies.
+With TestBed, you can create instances of components, services, and directives within the testing module.
+
+### ComponentFixture
+
+ComponentFixture is a wrapper around a component that provides access to the component instance and its associated DOM element.
+It is used in component testing to interact with the component, trigger change detection, and make assertions about its state and behavior.
+
+### TestModuleMetadata
+
+TestModuleMetadata is an interface that defines the configuration of an Angular testing module. It includes properties such as declarations, imports, providers, and schemas that allow you to specify the components, modules, services, and schemas used in the testing module.
+
+### async and fakeAsync
+
+Angular provides mechanisms for dealing with asynchronous operations in tests. The async function and fakeAsync zone allow you to handle asynchronous code and ensure that the testing environment is stable before making assertions.
+async is used with the await keyword to handle promises, while fakeAsync is used to simulate the passage of time without waiting for real-time.
+
+### DebugElement
+
+DebugElement is a wrapper around a DOM element in the testing environment. It is used to query and interact with elements in the component's view.
+DebugElement is commonly used in component testing to traverse the component's DOM structure and make assertions about the rendered HTML.
